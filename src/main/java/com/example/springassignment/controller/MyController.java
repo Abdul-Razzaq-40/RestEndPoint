@@ -24,6 +24,7 @@ public class MyController {
     @Autowired
     InventoryRepository inventoryRepository;
     @PostMapping("/upload")
+
     public String UploadData(@RequestParam("file") MultipartFile file) throws Exception{
         List<InventoryData> myData=new ArrayList<InventoryData>();
         InputStream inputStream=file.getInputStream();
