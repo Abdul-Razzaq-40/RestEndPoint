@@ -30,6 +30,7 @@ public class Inventory implements Serializable {
 
     @ManyToOne
     @JsonBackReference
+
     @JoinColumn(name="supplier_id")
     Supplier supplier;
 }
